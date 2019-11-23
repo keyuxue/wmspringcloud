@@ -1,6 +1,7 @@
 package com.kyx.controller;
 
 import com.kyx.entity.Menu;
+import com.kyx.entity.MenuVO;
 import com.kyx.repository.MenuRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
@@ -26,8 +27,9 @@ public class MenuController {
     }
 
     @GetMapping("/findAll/{index}/{limit}")
-    public List<Menu> findAll(@PathVariable("index") int index, @PathVariable("limit") int limit) {
-        return menuRepository.findAll(index, limit);
+    public MenuVO findAll(@PathVariable("index") int index, @PathVariable("limit") int limit) {
+
+        return new MenuVO(0, "", menuRepository.count(), menuRepository.findAll(index, limit));
     }
 }
 
