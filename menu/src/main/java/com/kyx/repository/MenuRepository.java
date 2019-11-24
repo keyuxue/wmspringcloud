@@ -1,7 +1,6 @@
 package com.kyx.repository;
 
 import com.kyx.entity.Menu;
-import org.springframework.web.bind.annotation.PathVariable;
 
 import java.util.List;
 public interface MenuRepository {
@@ -11,9 +10,9 @@ public interface MenuRepository {
 
     public Menu findById(long id);
 
-    public void save();
+    public void save(Menu menu);
 
-    public void update();
+    public void update(Menu menu);
 
-    public void deleteById();
+    public void deleteById(long id);
 }
