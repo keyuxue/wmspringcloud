@@ -11,6 +11,7 @@
         <module name="eurekaserver" />
         <module name="menu" />
         <module name="order" />
+        <module name="user" />
       </profile>
     </annotationProcessing>
   </component>
@@ -21,6 +22,7 @@
       <module name="eurekaserver" options="-parameters" />
       <module name="menu" options="-parameters" />
       <module name="order" options="-parameters" />
+      <module name="user" options="-parameters" />
       <module name="wmspringcloud" options="-parameters" />
     </option>
   </component>

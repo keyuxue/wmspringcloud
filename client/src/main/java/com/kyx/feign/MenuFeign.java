@@ -1,6 +1,6 @@
 package com.kyx.feign;
 
-import com.kyx.entity.Menu;
+
 import com.kyx.entity.MenuVO;
 import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.web.bind.annotation.DeleteMapping;
